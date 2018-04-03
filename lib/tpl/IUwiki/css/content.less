@@ -23,35 +23,49 @@
 
     .page.numbered_heading {
         counter-reset: level1;
-        #dw__toc > div {
-            counter-reset: level1;
-        }
-        h2,
         #dw__toc li.level1 {
             counter-reset: level2;
         }
-        h3,
         #dw__toc li.level2 {
             counter-reset: level3;
         }
-        h2:before,
-        #dw__toc li.level1 a:before {
+        #dw__toc li.level2 a:before {
+            color: @ini_numbered_heading;
+            content: counter(level2) ". ";
+            counter-increment: level2;
+        }
+        #dw__toc li.level3 a:before {
+            color: @ini_numbered_heading;
+            content: counter(level2) "." counter(level3) ". ";
+            counter-increment: level3;
+        }
+        #dw__toc li.level4 a:before {
+            color: @ini_numbered_heading;
+            content: counter(level2) "." counter(level3) "." counter(level4) ". ";
+            counter-increment: level4;
+        }
+        h2 {
+            counter-reset: level2;
+        }        
+        h3 {
+            counter-reset: level3;
+        }        
+        h2:before {
             color: @ini_numbered_heading;
             content: counter(level1) ". ";
             counter-increment: level1;
-        }
-        h3:before,
-        #dw__toc li.level2 a:before {
+        }        
+        h3:before {
             color: @ini_numbered_heading;
             content: counter(level1) "." counter(level2) ". ";
             counter-increment: level2;
-        }
-        h4:before,
-        #dw__toc li.level3 a:before {
+        }       
+        h4:before {
             color: @ini_numbered_heading;
             content: counter(level1) "." counter(level2) "." counter(level3) ". ";
             counter-increment: level3;
-        }
+        }        
+        
         h2:before,
         h3:before,
         h4:before {

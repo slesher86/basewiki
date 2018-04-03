@@ -555,9 +555,12 @@ function tpl_button($type, $return = false) {
         extract($data);
         if($id === '#dokuwiki__top') {
             $out = html_topbtn();
+        } else if ($id === '#footer'){
+            $out = html_bottombtn();
         } else {
             $out = html_btn($type, $id, $accesskey, $params, $method);
         }
+
     }
     if($return) return $out;
     echo $out;
@@ -714,6 +717,11 @@ function tpl_get_action($type) {
             $params    = array('do' => '');
             $id        = '#dokuwiki__top';
             break;
+        case 'bottom':
+            $accesskey = 'bot';
+            $params    = array('do' => '');
+            $id        = '#footer';
+            break;            
         case 'back':
             $parent = tpl_getparent($ID);
             if(!$parent) {

@@ -28,6 +28,7 @@ $lang['btn_search']            = '検索';
 $lang['btn_save']              = '保存';
 $lang['btn_preview']           = 'プレビュー';
 $lang['btn_top']               = '文書の先頭へ';
+$lang['btn_bottom']            = '文書の最後へ';
 $lang['btn_newer']             = '<< より新しい';
 $lang['btn_older']             = 'より古い >>';
 $lang['btn_revs']              = '以前のリビジョン';

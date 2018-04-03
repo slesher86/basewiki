@@ -167,6 +167,20 @@ function html_topbtn(){
 
     return $ret;
 }
+/**
+ * Just the back to bottom button (in its own form)
+ *
+ * @author LHK
+ *
+ * @return string html
+ */
+function html_bottombtn(){
+    global $lang;
+
+    $ret  = '<a class="nolink" href="#footer"><input type="button" class="button" value="'.$lang['btn_bottom'].'" onclick="window.scrollTo(0, document.body.scrollHeight)" title="'.$lang['btn_bottom'].'" /></a>';
+
+    return $ret;
+}
 
 /**
  * Displays a button (using its own form)

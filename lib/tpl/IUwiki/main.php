@@ -116,6 +116,9 @@ $showSidebar = page_findnearest($conf['sidebar']);
             <div id="to_top">
                 <?php tpl_action('top') ?>
             </div>
+            <div id="to_bottom">
+                <?php tpl_action('bottom') ?>
+            </div>            
         </div><!-- /sidebar_wrapper -->
 
         <div class="wrapper group">
