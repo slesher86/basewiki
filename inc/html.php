@@ -241,7 +241,8 @@ function html_btn($name, $id, $akey, $params, $method='get', $tooltip='', $label
         $ret .= 'accesskey="'.$akey.'" ';
     }
     $ret .= 'title="'.$tip.'">';
-    $ret .= hsc($label);
+    //$ret .= hsc($label);
+    $ret .= '<div class="icon"><div class="pencil"></div></div>';
     $ret .= '</button>';
     $ret .= '</div></form>';
 

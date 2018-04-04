@@ -1,0 +1,9 @@
+[04-Apr-2018 02:56:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/inc/lessc.inc.php on line 447
+[04-Apr-2018 02:56:18 UTC] PHP Stack trace:
+[04-Apr-2018 02:56:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/lib/exe/css.php:0
+[04-Apr-2018 02:56:18 UTC] PHP   2. css_out() /home/ubuntu/workspace/lib/exe/css.php:18
+[04-Apr-2018 02:56:18 UTC] PHP   3. css_parseless() /home/ubuntu/workspace/lib/exe/css.php:140
+[04-Apr-2018 02:56:18 UTC] PHP   4. lessc->compile() /home/ubuntu/workspace/lib/exe/css.php:177
+[04-Apr-2018 02:56:18 UTC] PHP   5. lessc->compileBlock() /home/ubuntu/workspace/inc/lessc.inc.php:1808
+[04-Apr-2018 02:56:18 UTC] PHP   6. lessc->compileCSSBlock() /home/ubuntu/workspace/inc/lessc.inc.php:197
+[04-Apr-2018 02:56:18 UTC] PHP   7. lessc->compileSelectors() /home/ubuntu/workspace/inc/lessc.inc.php:218

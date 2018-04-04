@@ -1,15 +1,8 @@
-{{:wiki:iu_03.jpg}}
+===== だれwiki =====
 
-===== IU =====
-Lee Ji-eun (born 16 May 1993), better known by her stage name IU, is a South Korean singer, songwriter and actress.
 
-==== Menu ====
-  * [[:home]]
-  * [[:about]]
-  * [[:albums]]
-    * [[:Original]]
-    * [[:album:single_mini]]
-    * [[:album:OST]]
+==== メニュー====
+  * [[:マイページ(工事中)]]
 
-==== External ====
-  * [[http://dokuwiki.org|More menus]]
+==== 関連サイト====
+  * [[工事中]]

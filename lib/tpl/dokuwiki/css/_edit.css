@@ -122,7 +122,7 @@ div.picker button.toolbutton {
 
 .dokuwiki .secedit {
     float: right;
-    margin-top: -1.4em;
+    margin-top: -0.5em;
 }
 [dir=rtl] .dokuwiki .secedit {
     float: left;
