@@ -1,0 +1,582 @@
+
+<h1 class="sectionedit1" id="利用ガイド">利用ガイド</h1>
+<div class="level1">
+
+<p>
+だれwikiは<a href="https://www.dokuwiki.org/DokuWiki" class="interwiki iw_doku" title="https://www.dokuwiki.org/DokuWiki">DokuWiki</a>エンジンを利用して作成されています。文章を更新する方法に関しては以下のガイドをご参考ください。
+</p>
+
+</div>
+<!-- EDIT1 SECTION "利用ガイド" [1-203] -->
+<h2 class="sectionedit2" id="文書の更新方法">文書の更新方法</h2>
+<div class="level2">
+
+<p>
+全体ページの内容を更新されたい場合は、ページ右上の鉛筆をクリックしメニューを開き<em class="u">文書を編集</em>ボタンをクリックしてください。
+文書の一部だけを編集されたい場合は、文書横の鉛筆をクリックし一部を編集することも可能です。
+</p>
+
+</div>
+<!-- EDIT2 SECTION "文書の更新方法" [204-559] -->
+<h2 class="sectionedit3" id="テキストを見やすく書くための技術">テキストを見やすく書くための技術</h2>
+<div class="level2">
+
+</div>
+<!-- EDIT3 SECTION "テキストを見やすく書くための技術" [560-620] -->
+<h3 class="sectionedit4" id="文字を変える時">文字を変える時</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"><strong>太字</strong> : <strong>文書的に重要</strong>な内容を強調したい内容がある場合使用</div>
+</li>
+<li class="level1"><div class="li"><em>斜体</em> : 可読性のため不使用</div>
+</li>
+<li class="level1"><div class="li"><em class="u">下線</em> : 読み手に<em class="u">伝えたい内容</em>を強調したい内容がある場合使用</div>
+</li>
+<li class="level1"><div class="li"><code>コード</code>：本文と分離して読んだほうが良い内容の時使用（人物のコメントなど）</div>
+</li>
+<li class="level1"><div class="li"><del>横線</del>：客観的な情報ではないが、記入者が感じた感情や皮肉などに使用　<del>わかりづらくないか？</del></div>
+</li>
+<li class="level1"><div class="li"><span class="wrap_em ">重要色に変換</span> : 最も重要な部分を表示するときに使用（乱発しないようにご注意ください）</div>
+</li>
+</ul>
+<pre class="code">**太字: **文書的に重要**な内容を強調したい内容がある場合使用
+//斜体// : 可読性のため不使用
+__下線__ : 読み手に__伝えたい内容__を強調したい内容がある場合使用
+&#039;&#039;コード&#039;&#039;：本文と分離して読んだほうが良い内容の時使用（人物のコメントなど）
+&lt;del&gt;横線&lt;/del&gt;：客観的な情報ではないが、記入者が感じた感情や皮肉などに使用　&lt;del&gt;わかりづらくないか？&lt;/del&gt;
+&lt;wrap em&gt;重要色に変換&lt;/wrap&gt; : 最も重要な部分を表示するときに使用（乱発しないようにご注意ください）</pre>
+
+<p>
+※上記以外の書き方もございますが、可読性の側面から文書の表現に関しては以上の表現を推奨します
+</p>
+
+</div>
+<!-- EDIT4 SECTION "文字を変える時" [621-2081] -->
+<h3 class="sectionedit5" id="改行したい場合">改行したい場合</h3>
+<div class="level3">
+
+<p>
+ 開業したい場所に\\を挿入します。
+</p>
+
+<p>
+This is some text with some linebreaks<br/>
+Note that the
+two backslashes are only recognized at the end of a line<br/>
+
+or followed by<br/>
+a whitespace \\this happens without it.
+</p>
+<pre class="code">This is some text with some linebreaks\\ Note that the
+two backslashes are only recognized at the end of a line\\
+or followed by\\ a whitespace \\this happens without it.</pre>
+
+</div>
+<!-- EDIT5 SECTION "改行したい場合" [2082-2522] -->
+<h3 class="sectionedit6" id="入力内容をそのまま表示したい場合">入力内容をそのまま表示したい場合</h3>
+<div class="level3">
+
+<p>
+テキストエディターでの入力内容を自動変換させず、そのまま記録したい場合は、文書を&lt;nowiki&gt;&lt;/nowiki&gt;で囲みます。
+</p>
+<pre class="code">テキストエディターでの入力内容を自動変換させず、そのまま記録したい場合は、文書を&lt;nowiki&gt;&lt;nowiki&gt;&lt;/nowiki&gt;&lt;/nowiki&gt;で囲みます。</pre>
+
+<p>
+さらに文章を&lt;code&gt;&lt;/code&gt;で囲むことで、以下のように別途テキストボックスとして分離することも可能です。
+</p>
+<pre class="code">分離されたテキストボックス</pre>
+
+</div>
+<!-- EDIT6 SECTION "入力内容をそのまま表示したい場合" [2523-3160] -->
+<h3 class="sectionedit7" id="コメント">コメント</h3>
+<div class="level3">
+
+<p>
+コメントを残したい部分は括弧を二重にかぶせることで自動的にコメント<sup><a href="#fn__1" id="fnt__1" class="fn_top">1)</a></sup>処理されます。
+</p>
+
+</div>
+<!-- EDIT7 SECTION "コメント" [3161-3474] -->
+<h2 class="sectionedit8" id="文書を見やすく書くための技術">文書を見やすく書くための技術</h2>
+<div class="level2">
+
+</div>
+<!-- EDIT8 SECTION "文書を見やすく書くための技術" [3475-3529] -->
+<h3 class="sectionedit9" id="見出しの作り方">見出しの作り方</h3>
+<div class="level3">
+
+<p>
+テキスト入力時に見出しとして利用したい部分の前後を=で囲むことで見出しが作成されます。
+</p>
+<pre class="code">======= 見出し1 ======= 
+====== 見出し2  ======
+===== 見出し3  =====
+==== 見出し4 ====
+=== 見出し5  ===</pre>
+
+<p>
+※＝を前後に六つ使うことで作られる<strong>見出し1</strong>は文書のタイトルにあたる部分ですので、内容の中は見出し2よりご利用ください
+また、文書の目次は見出しの設定をベースに自動的に作られます。
+</p>
+
+</div>
+<!-- EDIT9 SECTION "見出しの作り方" [3530-4091] -->
+<h3 class="sectionedit10" id="区分線の作り方">区分線の作り方</h3>
+<div class="level3">
+
+<p>
+ハイフン (-)を連続で四つ書くと区分線が表示されます。
+</p>
+<hr />
+<pre class="code">ハイフン (-)を連続で四つ書くと区分線が表示されます。
+----</pre>
+
+</div>
+<!-- EDIT10 SECTION "区分線の作り方" [4092-4304] -->
+<h3 class="sectionedit11" id="リストの作り方">リストの作り方</h3>
+<div class="level3">
+
+<p>
+簡単な方法でリストを作成することができます。番号があるリストの場合は半角スペースを2個を書いたあと<code>*</code>を入力することで自動的にリストが作成されます。
+</p>
+<ul>
+<li class="level1"><div class="li"> リスト1</div>
+</li>
+<li class="level1"><div class="li"> リスト2</div>
+</li>
+</ul>
+
+<p>
+最初のスペースの4個書くことで、リストの階層を表現できます。
+</p>
+<ul>
+<li class="level1 node"><div class="li"> リスト1</div>
+<ul>
+<li class="level2"><div class="li"> リスト1-1</div>
+</li>
+<li class="level2"><div class="li"> リスト1-2</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> リスト2</div>
+</li>
+</ul>
+<pre class="code">  * リスト1
+  * リスト2
+最初のスペースの4個書くことで、リストの階層を表現できます。
+  * リスト1
+    * リスト1-1
+    * リスト1-2
+  * リスト2</pre>
+
+</div>
+<!-- EDIT11 SECTION "リストの作り方" [4305-4948] -->
+<h2 class="sectionedit12" id="リンクを作る方法">リンクを作る方法</h2>
+<div class="level2">
+
+</div>
+<!-- EDIT12 SECTION "リンクを作る方法" [4949-4985] -->
+<h3 class="sectionedit13" id="외부_사이트">- 외부 사이트</h3>
+<div class="level3">
+
+<p>
+<a href="http://www.google.com" class="urlextern" title="http://www.google.com" rel="nofollow">www.google.com</a> 같은 외부 사이트 링크는 그냥 쓰면 된다.<br/>
+
+<a href="http://www.google.com" class="urlextern" title="http://www.google.com" rel="nofollow">구글이지롱</a> 처럼 보이는 페이지 링크를 직접 쓸수도 있다.
+</p>
+<pre class="code">www.google.com
+[[http://www.google.com|구글이지롱]]</pre>
+
+</div>
+<!-- EDIT13 SECTION "- 외부 사이트" [4986-5256] -->
+<h3 class="sectionedit14" id="내부_문서">- 내부 문서</h3>
+<div class="level3">
+
+<p>
+<a href="/doku.php/wiki_syntax" class="wikilink2" title="wiki_syntax" rel="nofollow">/wiki/syntax</a>처럼 페이지 이름을 그대로 사용하거나 
+<a href="/doku.php/wiki_syntax" class="wikilink2" title="wiki_syntax" rel="nofollow">편집문법</a> 처럼 보이는 페이지 이름을 직접 쓸 수 있다.
+<a href="/doku.php/syntax#하이퍼링크_내부_문서" class="wikilink2" title="syntax" rel="nofollow">이 문단</a>으로 연결
+</p>
+<pre class="code">[[/wiki/syntax]]처럼 페이지 이름을 그대로 사용하거나 
+[[/wiki/syntax|편집문법]] 처럼 보이는 페이지 이름을 직접 설정할 수 있다.
+[[/syntax#하이퍼링크(내부 문서)|이 문단]]으로 연결</pre>
+
+<p>
+페이지 내의 특정 문단에 링크하는 하려면 해쉬 기호(#)를 문단명 앞에 붙이면 된다. 근데 문단링크는 인게임브라우저에서 안먹힐때가 있고, 역링크 추적보수가 되지 않으므로 꼭 필요할때만 쓸 것.<br/>
+
+페이지 이름에 /를 사용하여 이름공간을 분류할 수 있다. :를 써도 작동은 되는데 햇갈리니까 /로 통일하자. <br/>
+
+주의할건 무조건 맨 앞에 /를 붙여야 한다. 안붙이면 같은 이름공간에서만 링크가 되버리니 무조건 앞에 /를 붙이는 습관이 필요하다. 예를들어 <a href="/doku.php/ship:amarr" class="wikilink2" title="ship:amarr" rel="nofollow">amarr</a>문서에서 <a href="/doku.php/%ED%94%BC%ED%8C%85" class="wikilink2" title="피팅" rel="nofollow">피팅</a>문서를 링크할 때 <code><a href="/doku.php/%ED%94%BC%ED%8C%85" class="wikilink2" title="피팅" rel="nofollow">피팅</a></code>이라고 쓰면 <code>/함선/피팅</code>으로 링크가 걸린다. <code><a href="/doku.php/%ED%94%BC%ED%8C%85" class="wikilink2" title="피팅" rel="nofollow">/피팅</a></code>이라고 써야 맞다.
+</p>
+<ul>
+<li class="level1"><div class="li"> 문단의 이름이 바뀌면 링크 이름 역시 바뀌게 된다. 따라서 문단 이름을 바꿀시에는 문단으로 링크되는 것들이 있나 먼저 확인 후 바꿀 것</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT14 SECTION "- 내부 문서" [5257-6719] -->
+<h3 class="sectionedit15" id="문서_리다이렉트하기">- 문서 리다이렉트하기</h3>
+<div class="level3">
+<pre class="code">#REDIRECT /문서이름
+#REDIRECT /이름공간/문서이름</pre>
+
+<p>
+잉커전이라는 문서를 인커전으로 리다이렉트 시키고 싶으면 <code>잉커전</code>이라는 문서를 만들고 내용에 
+</p>
+<pre class="code">#REDIRECT /인커전</pre>
+
+<p>
+을 쓰면 된다.
+</p>
+
+</div>
+<!-- EDIT15 SECTION "- 문서 리다이렉트하기" [6720-7014] -->
+<h3 class="sectionedit16" id="이미지_하이퍼링크">- 이미지 하이퍼링크</h3>
+<div class="level3">
+
+<p>
+이미지에 하이퍼링크를 달려면 다음과 같이 하면 된다.
+</p>
+<pre class="code">[[http://evewho.com/pilot/Funzinnu+BT|{{http://image.eveonline.com/Character/90426601_128.jpg}}]]</pre>
+
+<p>
+<a href="http://evewho.com/pilot/Funzinnu+BT" class="media" title="http://evewho.com/pilot/Funzinnu+BT" rel="nofollow"><img src="/lib/exe/fetch.php?tok=16eaeb&amp;media=http%3A%2F%2Fimage.eveonline.com%2FCharacter%2F90426601_128.jpg" class="media" title="image.eveonline.com_character_90426601_128.jpg" alt="image.eveonline.com_character_90426601_128.jpg" /></a>
+</p>
+
+</div>
+<!-- EDIT16 SECTION "- 이미지 하이퍼링크" [7015-7329] -->
+<h2 class="sectionedit17" id="이미지">- 이미지</h2>
+<div class="level2">
+
+<p>
+가난한 사이트라 이미지 업로드는 불가능하다. imgur.com 같은 외부 링크를 사용할 것.
+</p>
+
+<p>
+중괄호를 사용하여 <a href="https://www.dokuwiki.org/ko%3Aimages" class="interwiki iw_doku" title="https://www.dokuwiki.org/ko%3Aimages">그림</a>을 표시할 수 있다.(그림 파일이 wiki 내부든 외부든 상관 없다.). 옵션으로 그림 크기도 지정 가능. 잘생긴 Funzinnu BT의 포트레잇을 예제로 몇가지 옵션을 알아보자.
+</p>
+
+<p>
+실제 크기:          <a href="/lib/exe/fetch.php?tok=16eaeb&amp;media=http%3A%2F%2Fimage.eveonline.com%2FCharacter%2F90426601_128.jpg" class="media" title="http://image.eveonline.com/Character/90426601_128.jpg"><img src="/lib/exe/fetch.php?tok=16eaeb&amp;media=http%3A%2F%2Fimage.eveonline.com%2FCharacter%2F90426601_128.jpg" class="media" title="image.eveonline.com_character_90426601_128.jpg" alt="image.eveonline.com_character_90426601_128.jpg" /></a>
+</p>
+
+<p>
+폭 변경<sup><a href="#fn__2" id="fnt__2" class="fn_top">2)</a></sup>:            <a href="/lib/exe/fetch.php?tok=16eaeb&amp;media=http%3A%2F%2Fimage.eveonline.com%2FCharacter%2F90426601_128.jpg" class="media" title="http://image.eveonline.com/Character/90426601_128.jpg"><img src="/lib/exe/fetch.php?w=50&amp;tok=cdb3f1&amp;media=http%3A%2F%2Fimage.eveonline.com%2FCharacter%2F90426601_128.jpg" class="media" title="image.eveonline.com_character_90426601_128.jpg" alt="image.eveonline.com_character_90426601_128.jpg" width="50" /></a>
+</p>
+<pre class="code">실제 크기:          {{http://image.eveonline.com/Character/90426601_128.jpg}}
+폭 변경:            {{http://image.eveonline.com/Character/90426601_128.jpg?50}}</pre>
+
+<p>
+좌,우측에 공백 문자를 사용하여 정렬 위치를 선택할 수 있다.
+</p>
+
+<p>
+<a href="/lib/exe/fetch.php?tok=16eaeb&amp;media=http%3A%2F%2Fimage.eveonline.com%2FCharacter%2F90426601_128.jpg" class="media" title="http://image.eveonline.com/Character/90426601_128.jpg"><img src="/lib/exe/fetch.php?tok=16eaeb&amp;media=http%3A%2F%2Fimage.eveonline.com%2FCharacter%2F90426601_128.jpg" class="mediaright" title="image.eveonline.com_character_90426601_128.jpg" alt="image.eveonline.com_character_90426601_128.jpg" /></a>
+</p>
+
+<p>
+<a href="/lib/exe/fetch.php?tok=16eaeb&amp;media=http%3A%2F%2Fimage.eveonline.com%2FCharacter%2F90426601_128.jpg" class="media" title="http://image.eveonline.com/Character/90426601_128.jpg"><img src="/lib/exe/fetch.php?tok=16eaeb&amp;media=http%3A%2F%2Fimage.eveonline.com%2FCharacter%2F90426601_128.jpg" class="medialeft" title="image.eveonline.com_character_90426601_128.jpg" alt="image.eveonline.com_character_90426601_128.jpg" /></a>
+</p>
+
+<p>
+<a href="/lib/exe/fetch.php?tok=16eaeb&amp;media=http%3A%2F%2Fimage.eveonline.com%2FCharacter%2F90426601_128.jpg" class="media" title="http://image.eveonline.com/Character/90426601_128.jpg"><img src="/lib/exe/fetch.php?tok=16eaeb&amp;media=http%3A%2F%2Fimage.eveonline.com%2FCharacter%2F90426601_128.jpg" class="mediacenter" title="image.eveonline.com_character_90426601_128.jpg" alt="image.eveonline.com_character_90426601_128.jpg" /></a>
+</p>
+<pre class="code">{{ http://image.eveonline.com/Character/90426601_128.jpg}}
+{{http://image.eveonline.com/Character/90426601_128.jpg }}
+{{ http://image.eveonline.com/Character/90426601_128.jpg }}</pre>
+
+<p>
+그림에 캡션을 달 수도 있다.(대부분의 브라우저에서 마우스 오버시 나오는 툴팁)
+</p>
+
+<p>
+<a href="/lib/exe/fetch.php?tok=16eaeb&amp;media=http%3A%2F%2Fimage.eveonline.com%2FCharacter%2F90426601_128.jpg" class="media" title="http://image.eveonline.com/Character/90426601_128.jpg"><img src="/lib/exe/fetch.php?tok=16eaeb&amp;media=http%3A%2F%2Fimage.eveonline.com%2FCharacter%2F90426601_128.jpg" class="mediacenter" title="멋쟁이" alt="멋쟁이" /></a>
+</p>
+<pre class="code">{{ http://image.eveonline.com/Character/90426601_128.jpg |멋쟁이}}</pre>
+
+<p>
+파일은 (“gif, jpeg, png”)만 지원한다.
+</p>
+
+</div>
+<!-- EDIT17 SECTION "- 이미지" [7330-8884] -->
+<h3 class="sectionedit18" id="이브_이미지서버">- 이브 이미지서버</h3>
+<div class="level3">
+
+<p>
+인게임에서 나오는 아이콘들은 이브 이미지서버에서 핫링크를 제공해준다. 링크를 걸기 위해서는 ID를 알아야 하는데, 쉽게 ID를 알아내는 방법은 인게임 채팅창에 링크를 하고, 우클릭 카피한다음 인게임이 아닌 외부 아무곳곳이나 붙여넣기하면 인게임 마크업문법이 보이는데 ID를 찾을 수 있다. 인게임 마크업코드랑 위키문법이랑 당연히 다르므로 ID만 가져와야 한다.
+</p>
+
+<p>
+크기는 16, 64, 128, 512를 지원하나 종류별로 최대 크기가 다르다.
+</p>
+<ul>
+<li class="level1"><div class="li"><a href="https://image.eveonline.com/Alliance/" class="urlextern" title="https://image.eveonline.com/Alliance/" rel="nofollow">https://image.eveonline.com/Alliance/</a>얼라이언스ID_128.png</div>
+</li>
+<li class="level1"><div class="li"><a href="https://image.eveonline.com/Corporation/" class="urlextern" title="https://image.eveonline.com/Corporation/" rel="nofollow">https://image.eveonline.com/Corporation/</a>콥ID_256.png</div>
+</li>
+<li class="level1"><div class="li"><a href="https://image.eveonline.com/Character/" class="urlextern" title="https://image.eveonline.com/Character/" rel="nofollow">https://image.eveonline.com/Character/</a>캐릭터ID_16 or 32.<strong>jpg</strong></div>
+</li>
+<li class="level1"><div class="li"><a href="https://image.eveonline.com/Type/" class="urlextern" title="https://image.eveonline.com/Type/" rel="nofollow">https://image.eveonline.com/Type/</a>아이템ID_32.png</div>
+</li>
+<li class="level1"><div class="li"><a href="https://image.eveonline.com/Render/" class="urlextern" title="https://image.eveonline.com/Render/" rel="nofollow">https://image.eveonline.com/Render/</a>아이템ID_512.png : 3d 아이콘인 아이템만 사용 가능(함선,드론 등)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT18 SECTION "- 이브 이미지서버" [8885-9870] -->
+<h2 class="sectionedit19" id="인용">- 인용</h2>
+<div class="level2">
+
+<p>
+인용문은 앞에 &gt;를 붙여주면 된다.
+</p>
+<pre class="code">&gt; If you get a Hel you&#039;re retarded, 
+&gt; but your compatriots will appreciate never being the first supercarrier primaried.
+&gt; 만약에 헬 사면 넌 존나 병신인데, 프라이머리 대신 먹어줘서 친구들이 고마워할꺼야
+&gt; 
+&gt; - CFC</pre>
+<blockquote><div class="no">
+ If you get a Hel you&#039;re retarded, <br/>
+ but your compatriots will appreciate never being the first supercarrier primaried.<br/>
+ 만약에 헬 사면 넌 존나 병신인데, 프라이머리 대신 먹어줘서 친구들이 고마워할꺼야<br/>
+<br/>
+ - CFC</div></blockquote>
+
+</div>
+<!-- EDIT19 SECTION "- 인용" [9871-10451] -->
+<h2 class="sectionedit20" id="표">- 표</h2>
+<div class="level2">
+
+<p>
+표(테이블)를 만드려면 다음 문법을 사용한다.
+</p>
+<div class="table sectionedit21"><table class="inline">
+	<tr class="row0">
+		<td class="col0 leftalign"> 이름 1       </td><td class="col1 leftalign"> 이름 2        </td><td class="col2 leftalign"> 이름 3                   </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> 행 1 열 1    </td><td class="col1 leftalign"> 행 1 열 2     </td><td class="col2 leftalign"> 행 1 열 3                </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> 행 2 열 1    </td><td class="col1 leftalign" colspan="2"> 열 병합 (주의: 파이프 문자가 2개 연속)  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> 행 3 열 1    </td><td class="col1 leftalign"> 행 2 열 2     </td><td class="col2 leftalign"> 행 2 열 3                </td>
+	</tr>
+</table></div>
+<!-- EDIT21 TABLE [10534-10807] -->
+<p>
+표의 일반적인 행들은 시작과 끝에 <code>|</code> (파이프 문자, shift + \)로 열고 닫으면 된다.
+ 하고 제목 셀은 <code>^</code> (꺽쇠 기호)를 사용한다.
+</p>
+<pre class="code">| 이름 1       | 이름 2        | 이름 3                   |
+| 행 1 열 1    | 행 1 열 2     | 행 1 열 3                |
+| 행 2 열 1    | 열 병합 (주의: 파이프 문자가 2개 연속)  ||
+| 행 3 열 1    | 행 2 열 2     | 행 2 열 3                |</pre>
+
+<p>
+셀을 수평으로 병합하려면 위와같이 다음 셀의 내용을 비운다. 셀을 구분하기 위한 파이프 문자는 어느 행이든 같은 수만큼 필요하니 주의
+</p>
+
+</div>
+<!-- EDIT20 SECTION "- 표" [10452-11450] -->
+<h3 class="sectionedit22" id="셀_합치기">- 셀 합치기</h3>
+<div class="level3">
+
+<p>
+행을 병합하려면, 병합할 셀 안에 “:::“라는 문자열을 입력하면 된다.
+</p>
+<div class="table sectionedit23"><table class="inline">
+	<tr class="row0">
+		<td class="col0 leftalign"> 이름 1       </td><td class="col1 leftalign"> 이름 2       </td><td class="col2 leftalign"> 이름 3       </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> 행 1 열 1    </td><td class="col1 leftalign" rowspan="3"> 행 병합      </td><td class="col2 leftalign"> 행 1 열 3    </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> 행 2 열 1    </td><td class="col1 leftalign"> 행 2 열 3    </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> 행 3 열 1    </td><td class="col1 leftalign"> 행 2 열 3    </td>
+	</tr>
+</table></div>
+<!-- EDIT23 TABLE [11569-11777] -->
+<p>
+ ”:::” 이외의 다른 글자가 있으면 안된다.
+</p>
+<pre class="code">| 이름 1       | 이름 2       | 이름 3       |
+| 행 1 열 1    | 행 병합      | 행 1 열 3    |
+| 행 2 열 1    | :::          | 행 2 열 3    |
+| 행 3 열 1    | :::          | 행 2 열 3    |</pre>
+
+<p>
+표의 내용을 정렬할 수 있다. 띄어쓰기 두번을 텍스트의 반대쪽에 추가하면 된다.
+즉, 오른쪽으로 정렬하려면 왼쪽으로 스페이스 2개를, 왼쪽으로 정렬하려면 오른쪽으로 스페이스 2개를 추가.
+가운데로 정렬하려면 텍스트의 양쪽 끝에 스페이스 2개를 추가.
+</p>
+<div class="table sectionedit24"><table class="inline">
+	<tr class="row0">
+		<td class="col0 centeralign" colspan="3">                  정렬된 표               </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0 rightalign">        오른쪽</td><td class="col1 centeralign">    가운데    </td><td class="col2 leftalign">왼쪽           </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign">왼쪽         </td><td class="col1 rightalign">        오른쪽</td><td class="col2 centeralign">    가운데      </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> xxxxxxxxxxxx </td><td class="col1"> xxxxxxxxxxxx </td><td class="col2"> xxxxxxxxxxxx </td>
+	</tr>
+</table></div>
+<!-- EDIT24 TABLE [12394-12603] --><pre class="code">|                 정렬된 표                |||
+|        오른쪽|    가운데    |왼쪽           |
+|왼쪽          |        오른쪽|    가운데     |
+| xxxxxxxxxxxx | xxxxxxxxxxxx | xxxxxxxxxxxx |</pre>
+
+</div>
+<!-- EDIT22 SECTION "- 셀 합치기" [11451-12824] -->
+<h3 class="sectionedit25" id="셀_배경_색">- 셀 배경 색</h3>
+<div class="level3">
+
+<p>
+셀 배경을 넣으려면 셀 내용 앞에 @HTML색상코드:를 넣으면 된다. 근데 예시처럼 아무 색이나 알록달록 막 쓰지 말고 권장 색상을 사용할 것.
+</p>
+<div class="table sectionedit26"><table class="inline">
+	<tr class="row0">
+		<td class="col0 centeralign">  제목 1         </td><td class="col1 centeralign">  제목 2  </td><td class="col2 centeralign">  제목 3        </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0 centeralign" colspan="2">  @lightgreen:<strong>초록</strong>         </td><td class="col2 leftalign">           </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 rightalign">  @#6495ed:띵띵 </td><td class="col1 centeralign">  오       </td><td class="col2 centeralign">  멀티프리퀀시  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign">            </td><td class="col1 centeralign">  우       </td><td class="col2 centeralign">  @orange: 마이크로웨이브    </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 centeralign">  @:스탠다드        </td><td class="col1 centeralign">  야       </td><td class="col2 leftalign"> @red:라디오         </td>
+	</tr>
+</table></div>
+<!-- EDIT26 TABLE [13039-13328] --><pre class="code">|  제목 1         |  제목 2    |  제목 3           |
+|  @lightgreen:**초록**    ||                      |
+|  @#6495ed:띵띵 |  오   |  멀티프리퀀시            |
+|                |  우   |  @orange: 마이크로웨이브 |
+|  @:스탠다드     |  야   | @red:라디오             |</pre>
+
+</div>
+
+<h4 id="셀_권장_색상">- 셀 권장 색상</h4>
+<div class="level4">
+
+<p>
+위의 예시처럼 아무 색이나 알록달록 마구 쓰면 공돌이냄새가 나므로 아래 되도록이면 권장 색상만을 이용할 것.
+</p>
+<div class="table sectionedit27"><table class="inline">
+	<tr class="row0">
+		<td class="col0">@#131d27: 131d27</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0">@#999: 999</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">@#555: 555</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">@#333: 333</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">f5f5f5(기본 색)</td>
+	</tr>
+</table></div>
+<!-- EDIT27 TABLE [13824-13902] -->
+</div>
+<!-- EDIT25 SECTION "- 셀 배경 색" [12825-13902] -->
+<h2 class="sectionedit28" id="코드_블럭">- 코드 블럭</h2>
+<div class="level2">
+
+<p>
+최소한 2개 이상의 스페이스로 들여쓰기를 하거나 <code>&lt;code&gt;</code>를 사용하여 코드를 표시할 수 있다.
+</p>
+<pre class="code">두 칸을 띄어쓰기한 문장.</pre>
+<pre class="code">자동 변형이 끝난 코드. 스페이스 수가 다음과 같이 유지된다. 예,　　　　　&lt;- 여기</pre>
+
+<p>
+위의 블럭은 아래와 같은 소스로부터 작성되었다.
+</p>
+<pre class="code">  두 칸을 띄어쓰기한 문장.</pre>
+<pre class="code">&lt;code&gt;
+자동 변형이 끝난 코드. 스페이스 수가 다음과 같이 유지된다. 예,　　　　&lt;- 여기
+&lt;/code&gt;</pre>
+
+</div>
+<!-- EDIT28 SECTION "- 코드 블럭" [13903-14467] -->
+<h2 class="sectionedit29" id="틀">- 틀</h2>
+<div class="level2">
+<pre class="code">{{page&gt;wiki:틀#틀 문단 이름)}}
+예 : {{page&gt;wiki:틀#인커전리포트}}</pre>
+
+<p>
+<a href="/doku.php/%ED%8B%80" class="wikilink2" title="틀" rel="nofollow">틀</a>의 종류는 해당 문서 참고
+</p>
+
+</div>
+<!-- EDIT29 SECTION "- 틀" [14468-14612] -->
+<h2 class="sectionedit30" id="html_삽입">- HTML 삽입</h2>
+<div class="level2">
+
+<p>
+<code>&lt;html&gt;</code> 태그를 사용하여 <abbr title="HyperText Markup Language">HTML</abbr> 코드를 문서내에 포함할 수 있다. 왜인지는 모르겠는데 소문자 html로 쓰면 작동이 안될 때가 있으므로 대문자로 쓸 것. HTML은 최대한 사용을 자제해야 하며, 주로 위키 문법의 한계인 유튜브 영상을 올리거나, 인게임브라우저(IGB) 링크를 삽입할때만 사용한다.
+</p>
+
+</div>
+<!-- EDIT30 SECTION "- HTML 삽입" [14613-15028] -->
+<h3 class="sectionedit31" id="인게임_브라우저_igb_링크">- 인게임 브라우저(IGB) 링크</h3>
+<div class="level3">
+
+<p>
+IGB에서만 작동하는 자바스크립트. 당연히 코드 앞에 html로 열고 끝에 닫아줘야한다. 인게임브라우저 링크인지 그냥 웹 링크인지 구분하기 위해 반드시 style=color:#F90;를 넣어 색을 주황색으로 표시해야한다.
+</p>
+
+<p>
+링크를 걸기 위해서는 아이템의 ID를 알아야 하는데, 쉽게 ID를 알아내는 방법은 인게임 채팅창에 링크를 하고, 우클릭 카피한다음 인게임이 아닌 외부 아무곳곳이나 붙여넣기하면 인게임 마크업문법이 보이는데 ID를 찾을 수 있다. 인게임 마크업코드랑 위키문법이랑 당연히 다르므로 ID만 가져와야 한다.
+</p>
+<pre class="code">&lt;html&gt;&lt;a href=&quot;javascript:CCPEVE.showInfo(24692)&quot; style=color:#F90;&gt;아바돈 쇼인포&lt;/a&gt;&lt;/html&gt;
+&lt;html&gt;&lt;a href=&quot;javascript:CCPEVE.showPreview(24692)&quot; style=color:#F90;&gt;아바돈 프리뷰어&lt;/a&gt;&lt;/html&gt;</pre>
+
+<p>
+typeID는 링크할 오브젝트의 종류를 선언한다. 함선이나, 모듈같은 아이템은 선언하지 않아도 된다.선언하지 않아도 작동은 되나 배경이 이상하게 나오는 등 문제가 생긴다.
+</p>
+<ul>
+<li class="level1"><div class="li">캐릭터 : 1377</div>
+</li>
+<li class="level1"><div class="li">콥 : 2</div>
+</li>
+<li class="level1"><div class="li">성계 : 5</div>
+</li>
+<li class="level1"><div class="li">스테이션 : 3867</div>
+</li>
+</ul>
+<pre class="code">(typeID//itemID)</pre>
+
+<p>
+위처럼 더블슬러시로 구분하여도 작동은 하나 이전 방식으로 권장사항이 아니다. 쉼표와 공백을 사용할 것
+</p>
+
+</div>
+<!-- EDIT31 SECTION "- 인게임 브라우저(IGB) 링크" [15029-16424] -->
+<h3 class="sectionedit32" id="igb_피팅링크">- IGB 피팅링크</h3>
+<div class="level3">
+
+<p>
+피팅 정보인 SHIP DNA를 알아내는 가장 쉬운 방법은 인게임에서 피팅을 채팅창에 쓴다음, 카피 → 인게임 아닌곳에 붙여넣기하면 된다. 붙여넣기하면 다음과 같이 나타나는데 여기서 숫자를 복사하면 된다. 끝에 따옴표 붙이는 실수를 할 수 있으니 주의할 것.
+</p>
+
+</div>
+<!-- EDIT32 SECTION "- IGB 피팅링크" [16425-] --><div class="footnotes">
+<div class="fn"><sup><a href="#fnt__1" id="fn__1" class="fn_bot">1)</a></sup> 
+<div class="content">本来は出典もしくは付加的な説明を書く部分ですが、該当内容に関する個人的な意見や見解の書いても問題ございません。</div></div>
+<div class="fn"><sup><a href="#fnt__2" id="fn__2" class="fn_bot">2)</a></sup> 
+<div class="content">비율에 맞춰서 높이도 자동으로 조절된다</div></div>
+</div>
