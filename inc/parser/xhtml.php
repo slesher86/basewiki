@@ -68,7 +68,7 @@ class Doku_Renderer_xhtml extends Doku_Renderer {
      */
     public function startSectionEdit($start, $type, $title = null) {
         $this->sectionedits[] = array(++$this->lastsecid, $start, $type, $title);
-        return 'sectionedit'.$this->lastsecid;
+        return 'sectionedit'.$this->lastsecid.' '.seclink.$this->lastsecid;
     }
 
     /**

@@ -144,8 +144,7 @@ function html_secedit_get_button($data) {
     $secid = $data['secid'];
     unset($data['secid']);
 
-    return "<div class='secedit editbutton_" . $data['target'] .
-                       " editbutton_" . $secid . "'>" .
+    return "<div class='secedit editbutton_" . $data['target'] . " editbutton_" . $secid . "' id='seclink_" . $secid . "'>" .
            html_btn('secedit', $ID, '',
                     array_merge(array('do'  => 'edit',
                                       'rev' => $INFO['lastmod'],
