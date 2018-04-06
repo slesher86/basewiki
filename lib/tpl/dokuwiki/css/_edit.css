@@ -120,10 +120,6 @@ div.picker button.toolbutton {
 /* section edit buttons
 ********************************************************************/
 
-.dokuwiki .secedit {
-    float: right;
-    margin-top: -1.5em;
-}
 [dir=rtl] .dokuwiki .secedit {
     float: left;
 }
