@@ -242,7 +242,7 @@ Screen and Print Styles for the Wrap Plugin
     font-size: 85%;
 }
 .dokuwiki .wrap_em {
-    color: #c00;
+    color: #f0c;
     font-weight: bold;
 }
 .dokuwiki .wrap__dark.wrap_em {

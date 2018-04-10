@@ -876,7 +876,7 @@ function tpl_searchform($ajax = true, $autocomplete = true) {
     if($ACT == 'search') print 'value="'.htmlspecialchars($QUERY).'" ';
     print 'placeholder="'.$lang['btn_search'].'" ';
     if(!$autocomplete) print 'autocomplete="off" ';
-    print 'id="qsearch__in" accesskey="f" name="id" class="edit" title="[F]" />';
+    print 'id="qsearch__in" accesskey="f" name="id" class="edit" title="[F]" autocomplete="off"/>';
     print '<button type="submit" title="'.$lang['btn_search'].'">'.$lang['btn_search'].'</button>';
     if($ajax) print '<div id="qsearch__out" class="ajax_qsearch JSpopup"></div>';
     print '</div></form>';
@@ -1712,8 +1712,8 @@ function tpl_license($img = 'badge', $imgonly = false, $return = false, $wrap = 
     if($img) {
         $src = license_img($img);
         if($src) {
-            $out .= '<a href="'.$lic['url'].'" rel="license"'.$target;
-            $out .= '><img src="'.DOKU_BASE.$src.'" alt="'.$lic['name'].'" /></a>';
+            //$out .= '<a href="'.$lic['url'].'" rel="license"'.$target;
+            //$out .= '><img src="'.DOKU_BASE.$src.'" alt="'.$lic['name'].'" /></a>';
             if(!$imgonly) $out .= ' ';
         }
     }
