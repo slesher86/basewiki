@@ -19,6 +19,8 @@ require_once DOKU_PLUGIN.'syntax.php';
 //Using PEAR Templates
 require_once "HTML/Template/IT.php";
 
+//include pear
+ini_set("include_path", ".:/home/users/0/main.jp-8845acd92235a7db/web/lib/PEAR");
  
 /********************************************************************************************************************************
 * All DokuWiki plugins to extend the parser/rendering mechanism
