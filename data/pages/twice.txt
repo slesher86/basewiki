@@ -1,4 +1,16 @@
 ====== TWICE ======
+{{Digilent Infobox
+| Title = Example Title
+| Full Row = Example Full Row
+| Header = Example Header 1
+| Name = Value
+| Name 2 = Value 2
+| Name 3 = [[# | Link Example]]
+| Header = Header 2
+| Bullet = Some bulleted text
+| Bullet = In List Form
+}}
+
 ===== 소개 =====
 >ONE IN A MILLION! 안녕하세요, TWICE입니다!
 TWICE는 걸그룹 명가 [[JYP 엔터테인먼트]]에서 [[miss A]] 이후 5년 만에 선보인 9인조 다국적 [[걸그룹]]으로, 팀명의 의미는 눈으로 한 번, 귀로 한 번해서 두 번 감동을 준다는 뜻이다.
