@@ -46,7 +46,7 @@ class syntax_plugin_digilentinfobox extends DokuWiki_Syntax_Plugin
 	protected $primaryImage = '';
 	protected $title = '';
 	protected $subtitle = '';
-	protected $data = '';
+	protected $data = array();
 	protected $currentHeader = '';
 	protected $fullrowCount = 0;
 	protected $bulletCount = 0;
