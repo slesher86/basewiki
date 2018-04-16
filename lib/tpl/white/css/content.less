@@ -20,7 +20,6 @@
     }
 
     /*____________ Numbered Headings ____________*/
-
     .page.numbered_heading {
         counter-reset: level1;
         #dw__toc li.level1 {
@@ -95,12 +94,43 @@
     }
 }
 
+#dokuwiki__aside {
+        #dw__toc li.level1 {
+            counter-reset: level2;
+        }
+        #dw__toc li.level2 {
+            counter-reset: level3;
+        }
+        #dw__toc li.level2 a:before {
+            color: @ini_numbered_heading;
+            content: counter(level2) ". ";
+            counter-increment: level2;
+        }
+        #dw__toc li.level3 a:before {
+            color: @ini_numbered_heading;
+            content: counter(level2) "." counter(level3) ". ";
+            counter-increment: level3;
+        }
+        #dw__toc li.level4 a:before {
+            color: @ini_numbered_heading;
+            content: counter(level2) "." counter(level3) "." counter(level4) ". ";
+            counter-increment: level4;
+        }
+        #dw__toc h3:before {
+            content: '';
+        }
+        #dw__toc ul.toc:first {
+            padding-left: 0em;
+        }
+}
+
+
 /* table of contents */
 #dw__toc {
     float: inherit;
-    display: inline-block;
-    width: auto;
-    margin: 0 0 1.4em 0;
+    display: none;
+    width: 100%;
+    margin: 1em 0 1.4em 0;
     border: 1px solid @ini_border;
     background-color: @ini_background;
 
@@ -121,6 +151,11 @@
     a {
         color: @ini_text;
     }
+}
+
+#dokuwiki__aside #dw__toc {
+    display: inline-block;
+    
 }
 
 /* any link to current page */

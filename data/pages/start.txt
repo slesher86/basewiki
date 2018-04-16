@@ -1,4 +1,3 @@
-~~NOTOC~~
 ====== だれwiki：表紙 ======
 <WRAP group>
 <WRAP half column>

@@ -145,7 +145,7 @@
     }
     li a {
         display: block;
-        padding: 8px 10px;
+        padding: 0px 0px;
     }
     li a.urlextern {
         padding: 10px 12px 10px 30px;
@@ -358,7 +358,7 @@ div.icon div.pencil:before {
 /* edit button */
 
 .secedit {
-    display: contents;
+    display: none;
     button {
         background-color: rgba(0,0,0,0);!important;
         border: none;
@@ -367,3 +367,9 @@ div.icon div.pencil:before {
     }
 }
 
+h1, h2, h3, h4, h5 {
+    .secedit {
+        display: contents;
+
+    }        
+}
