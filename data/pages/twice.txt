@@ -1,5 +1,5 @@
 ====== TWICE ======
-{{Digilent Infobox
+{{Infobox
 | Title = Example Title
 | Full Row = Example Full Row
 | Header = Example Header 1

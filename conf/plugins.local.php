@@ -7,6 +7,7 @@
  *       enabled by default.
  */
 $plugins['authad'] = 0;
+$plugins['numberof'] = 0;
 $plugins['authmysql'] = 0;
 $plugins['authldap'] = 0;
 $plugins['editsections2'] = 0;

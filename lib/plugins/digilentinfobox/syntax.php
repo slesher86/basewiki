@@ -56,7 +56,7 @@ class syntax_plugin_digilentinfobox extends DokuWiki_Syntax_Plugin
     function getSort() { return 32; }
   
     function connectTo($mode) {
-        $this->Lexer->addEntryPattern('{{Digilent Infobox.*?(?=.*?}})',$mode,'plugin_digilentinfobox');
+        $this->Lexer->addEntryPattern('{{Infobox.*?(?=.*?}})',$mode,'plugin_digilentinfobox');
 		
 		//Add Internal Pattern Match For Product Page Elements	
 		$this->Lexer->addPattern('\|.*?(?=.*?)\n','plugin_digilentinfobox');
