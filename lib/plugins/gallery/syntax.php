@@ -474,14 +474,14 @@ class syntax_plugin_gallery extends DokuWiki_Syntax_Plugin {
         // pagination links
         $pgret = '';
         if($page){
-            $pgret .= '<div class="gallery_pages"><span>'.$this->getLang('pages').' </span>';
+            $pgret .= '<div class="gallery_pages">';
             for($j=1; $j<=$page; $j++){
                 $pgret .= '<a href="#gallery__'.$data['galid'].'_'.$j.'" class="gallery_pgsel button">'.$j.'</a> ';
             }
             $pgret .= '</div>';
         }
 
-        return '<div class="gallery'.$align.'"'.$xalign.'>'.$pgret.$ret.'<div class="clearer"></div></div>';
+        return '<div class="gallery'.$align.'"'.$xalign.'>'.$ret.$pgret.'<div class="clearer"></div></div>';
     }
 
     /**
