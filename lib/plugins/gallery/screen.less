@@ -2,7 +2,7 @@ div.dokuwiki div.gallery table {
     border: none;
 }
 div.dokuwiki div.gallery table td {
-    padding: 1em;
+    padding: 0em !important;
     text-align: center;
     vertical-align: middle;
     border: none;
@@ -11,7 +11,9 @@ div.dokuwiki div.gallery table td {
 div.dokuwiki div.gallery table img.tn {
     padding: 0.4em;
     border: 1px solid __border__;
-    max-width: none;
+    max-width: -webkit-fill-available;
+    width: 100%;
+
 }
 
 div.dokuwiki div.gallery {
@@ -24,7 +26,6 @@ div.dokuwiki div.gallery {
  *   }*/
 
 div.dokuwiki div.gallery img.tn {
-    margin: 9px;
     vertical-align: middle;
     padding: 0.4em;
     border: 1px solid #000;

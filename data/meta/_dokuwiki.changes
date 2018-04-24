@@ -1,14 +1,3 @@
-1523450570	122.219.141.137	E	twice	admin			9
-1523454741	122.219.141.137	E	twice	admin			198
-1523863838	122.219.141.137	E	sidebar	admin			-110
-1523863863	122.219.141.137	E	sidebar	admin			-2
-1523863874	122.219.141.137	E	sidebar	admin			6
-1523863886	122.219.141.137	E	sidebar	admin			-14
-1523863914	122.219.141.137	E	sidebar	admin			16
-1523863926	122.219.141.137	E	sidebar	admin			-12
-1523864069	122.219.141.137	R	sidebar	admin	以前のリビジョンを復元 (2018/04/09 15:02)	1523286140	116
-1523864194	122.219.141.137	E	sidebar	admin			-5
-1523867056	122.219.141.137	E	sidebar	admin			-55
 1523868487	122.219.141.137	E	start	admin			-10
 1523945279	122.219.141.137	E	twice	admin			-9
 1523946544	122.219.141.137	E	start	admin			19
@@ -18,7 +7,6 @@
 1523958231	122.219.141.137	E	start	admin			0
 1523958283	122.219.141.137	E	sidebar	admin			-3
 1523958371	122.219.141.137	E	sidebar	admin			-14
-1523286140	127.0.0.1	E	playground:playground		外部編集		25
 1524218137	122.219.141.137	E	playground:playground	admin			23
 1524218153	122.219.141.137	E	playground:playground	admin			-5
 1524218366	122.219.141.137	E	playground:playground	admin			20
@@ -30,3 +18,4 @@
 1524221419	122.219.141.137	E	playground:playground	admin			-6
 1524221449	122.219.141.137	E	playground:playground	admin			25
 1524228423	122.219.141.137	E	playground:playground	admin			13
+1524536362	122.219.141.137	E	playground:playground	admin			1

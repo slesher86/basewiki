@@ -2,4 +2,4 @@
 
 ====== PlayGround ======
 
-{{gallery>wiki:?lightbox&1&=10&~1&500x500}}
+{{gallery>wiki:?lightbox&1&=10&~1&500x500 }}
