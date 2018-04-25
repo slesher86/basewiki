@@ -19,6 +19,12 @@ div.dokuwiki div.gallery table img.tn {
 div.dokuwiki div.gallery {
     clear: left;
     margin-bottom: 1em;
+    max-width: 500px;
+}
+@media (max-width: 850px){
+div.dokuwiki div.gallery {
+    max-width: none; 
+}
 }
 
 /*div.dokuwiki div.gallery div {
@@ -33,7 +39,6 @@ div.dokuwiki div.gallery img.tn {
 
 div.dokuwiki div.gallery_left {
     float: left;
-    max-width: 500px;
 }
 
 div.dokuwiki div.gallery div {
@@ -54,9 +59,20 @@ div.dokuwiki div.gallery_center {
     text-align: center;
 }
 
+
 /* for pagination */
 div.dokuwiki div.gallery div.gallery_pages {
     float: none;
     text-align: left;
 }
-
+div.gallery_page {
+    display: contents;
+}
+div.dokuwiki div.gallery div.gallery_pages a {
+    background-color: #fff;
+    width:80px;
+    height:45px;
+    display: -webkit-inline-box;
+    background-repeat: no-repeat;
+    background-position: center;
+}

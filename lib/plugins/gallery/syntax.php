@@ -476,7 +476,7 @@ class syntax_plugin_gallery extends DokuWiki_Syntax_Plugin {
         if($page){
             $pgret .= '<div class="gallery_pages">';
             for($j=1; $j<=$page; $j++){
-                $pgret .= '<a href="#gallery__'.$data['galid'].'_'.$j.'" class="gallery_pgsel button">'.$j.'</a> ';
+                $pgret .= '<a href="#gallery__'.$data['galid'].'_'.$j.'" class="gallery_pgsel button"></a> ';
             }
             $pgret .= '</div>';
         }
