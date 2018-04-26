@@ -270,7 +270,9 @@ class syntax_plugin_quickstats extends DokuWiki_Syntax_Plugin {
                 $name = "<a href='javascript:void 0;' title = '$title'>$name</a>";
         }
         else if(is_numeric($num)  && $date !== false) {
-           $name = "<a href='javascript: QuickstatsShowPage(\"$ns\");' title = '$title'>$name</a>";
+            $nameArray  = explode(":", $name);
+            $lastname = array_pop($nameArray);
+            $name = "<a href='javascript: QuickstatsShowPage(\"$ns\");' title = '$title'>$name</a>";
         }
         else if ($title) {
              $name = "<a href='javascript:void 0;' title = '$title'>$name</a>";
