@@ -57,6 +57,7 @@
 	display: inline-block;	
 	width: 35%;
 	font-size: 1em;
+	font-weight: bold; 
 }
 
 .infobox .section .key-value .value
@@ -104,7 +105,7 @@
 
 .infobox .full-row
 {
- margin: 10px;
+	margin-left: 5%;
 }
 
 .infobox .secondary-btn
