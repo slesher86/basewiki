@@ -1,5 +1,0 @@
-~~NOCACHE~~
-
-====== PlayGround ======
-
-{{gallery>wiki:?lightbox&1&=10&~1&500x500 }}
