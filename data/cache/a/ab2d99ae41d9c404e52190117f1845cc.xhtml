@@ -1,0 +1,406 @@
+
+<h1 class="sectionedit1 seclink1" id="利用ガイド">利用ガイド</h1>
+<div class="level1">
+
+<p>
+だれwikiは<a href="https://www.dokuwiki.org/DokuWiki" class="interwiki iw_doku" title="https://www.dokuwiki.org/DokuWiki">DokuWiki</a>エンジンを利用して作成されています。文章を更新する方法に関しては以下のガイドをご参考ください。
+</p>
+
+</div>
+<!-- EDIT1 SECTION "利用ガイド" [1-203] -->
+<h2 class="sectionedit2 seclink2" id="文書の更新方法">文書の更新方法</h2>
+<div class="level2">
+
+<p>
+全体ページの内容を更新されたい場合は、ページ右上の鉛筆をクリックしメニューを開き<em class="u">文書を編集</em>ボタンをクリックしてください。
+文書の一部だけを編集されたい場合は、文書横の鉛筆をクリックし一部を編集することも可能です。
+</p>
+
+</div>
+<!-- EDIT2 SECTION "文書の更新方法" [204-559] -->
+<h2 class="sectionedit3 seclink3" id="テキストを見やすく書くための技術">テキストを見やすく書くための技術</h2>
+<div class="level2">
+
+</div>
+<!-- EDIT3 SECTION "テキストを見やすく書くための技術" [560-620] -->
+<h3 class="sectionedit4 seclink4" id="文字を変える時">文字を変える時</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"><strong>太字</strong> : <strong>文書的に重要</strong>な内容を強調したい内容がある場合使用</div>
+</li>
+<li class="level1"><div class="li"><em>斜体</em> : 可読性のため不使用</div>
+</li>
+<li class="level1"><div class="li"><em class="u">下線</em> : 読み手に<em class="u">伝えたい内容</em>を強調したい内容がある場合使用</div>
+</li>
+<li class="level1"><div class="li"><code>コード</code>：本文と分離して読んだほうが良い内容の時使用（人物のコメントなど）</div>
+</li>
+<li class="level1"><div class="li"><del>横線</del>：客観的な情報ではないが、記入者が感じた感情や皮肉などに使用　<del>わかりづらくないか？</del></div>
+</li>
+<li class="level1"><div class="li"><span class="wrap_em ">重要色に変換</span> : 最も重要な部分を表示するときに使用（乱発しないようにご注意ください）</div>
+</li>
+</ul>
+<pre class="code">**太字: **文書的に重要**な内容を強調したい内容がある場合使用
+//斜体// : 可読性のため不使用
+__下線__ : 読み手に__伝えたい内容__を強調したい内容がある場合使用
+&#039;&#039;コード&#039;&#039;：本文と分離して読んだほうが良い内容の時使用（人物のコメントなど）
+&lt;del&gt;横線&lt;/del&gt;：客観的な情報ではないが、記入者が感じた感情や皮肉などに使用　&lt;del&gt;わかりづらくないか？&lt;/del&gt;
+&lt;wrap em&gt;重要色に変換&lt;/wrap&gt; : 最も重要な部分を表示するときに使用（乱発しないようにご注意ください）</pre>
+
+<p>
+※上記以外の書き方もございますが、可読性の側面から文書の表現に関しては以上の表現を推奨します
+</p>
+
+</div>
+<!-- EDIT4 SECTION "文字を変える時" [621-2081] -->
+<h3 class="sectionedit5 seclink5" id="改行したい場合">改行したい場合</h3>
+<div class="level3">
+
+<p>
+ 開業したい場所に\\を挿入します。
+</p>
+
+<p>
+This is some text with some linebreaks<br/>
+Note that the
+two backslashes are only recognized at the end of a line<br/>
+
+or followed by<br/>
+a whitespace \\this happens without it.
+</p>
+<pre class="code">This is some text with some linebreaks\\ Note that the
+two backslashes are only recognized at the end of a line\\
+or followed by\\ a whitespace \\this happens without it.</pre>
+
+</div>
+<!-- EDIT5 SECTION "改行したい場合" [2082-2522] -->
+<h3 class="sectionedit6 seclink6" id="入力内容をそのまま表示したい場合">入力内容をそのまま表示したい場合</h3>
+<div class="level3">
+
+<p>
+テキストエディターでの入力内容を自動変換させず、そのまま記録したい場合は、文書を&lt;nowiki&gt;&lt;/nowiki&gt;で囲みます。
+</p>
+<pre class="code">テキストエディターでの入力内容を自動変換させず、そのまま記録したい場合は、文書を&lt;nowiki&gt;&lt;nowiki&gt;&lt;/nowiki&gt;&lt;/nowiki&gt;で囲みます。</pre>
+
+<p>
+さらに文章を&lt;code&gt;&lt;/code&gt;で囲むことで、以下のように別途テキストボックスとして分離することも可能です。
+</p>
+<pre class="code">分離されたテキストボックス</pre>
+
+</div>
+<!-- EDIT6 SECTION "入力内容をそのまま表示したい場合" [2523-3160] -->
+<h3 class="sectionedit7 seclink7" id="コメント">コメント</h3>
+<div class="level3">
+
+<p>
+コメントを残したい部分は括弧を二重にかぶせることで自動的にコメント<sup><a href="#fn__1" id="fnt__1" class="fn_top">1)</a></sup>処理されます。
+</p>
+
+</div>
+<!-- EDIT7 SECTION "コメント" [3161-3474] -->
+<h2 class="sectionedit8 seclink8" id="文書を見やすく書くための技術">文書を見やすく書くための技術</h2>
+<div class="level2">
+
+</div>
+<!-- EDIT8 SECTION "文書を見やすく書くための技術" [3475-3529] -->
+<h3 class="sectionedit9 seclink9" id="見出しの作り方">見出しの作り方</h3>
+<div class="level3">
+
+<p>
+テキスト入力時に見出しとして利用したい部分の前後を=で囲むことで見出しが作成されます。
+</p>
+<pre class="code">======= 見出し1 ======= 
+====== 見出し2  ======
+===== 見出し3  =====
+==== 見出し4 ====
+=== 見出し5  ===</pre>
+
+<p>
+※＝を前後に六つ使うことで作られる<strong>見出し1</strong>は文書のタイトルにあたる部分ですので、内容の中は見出し2よりご利用ください
+また、文書の目次は見出しの設定をベースに自動的に作られます。
+</p>
+
+</div>
+<!-- EDIT9 SECTION "見出しの作り方" [3530-4091] -->
+<h3 class="sectionedit10 seclink10" id="区分線の作り方">区分線の作り方</h3>
+<div class="level3">
+
+<p>
+ハイフン (-)を連続で四つ書くと区分線が表示されます。
+</p>
+<hr />
+<pre class="code">ハイフン (-)を連続で四つ書くと区分線が表示されます。
+----</pre>
+
+</div>
+<!-- EDIT10 SECTION "区分線の作り方" [4092-4304] -->
+<h3 class="sectionedit11 seclink11" id="リストの作り方">リストの作り方</h3>
+<div class="level3">
+
+<p>
+簡単な方法でリストを作成することができます。番号があるリストの場合は半角スペースを2個を書いたあと<code>*</code>を入力することで自動的にリストが作成されます。
+</p>
+<ul>
+<li class="level1"><div class="li"> リスト1</div>
+</li>
+<li class="level1"><div class="li"> リスト2</div>
+</li>
+</ul>
+
+<p>
+最初のスペースの4個書くことで、リストの階層を表現できます。
+</p>
+<ul>
+<li class="level1 node"><div class="li"> リスト1</div>
+<ul>
+<li class="level2"><div class="li"> リスト1-1</div>
+</li>
+<li class="level2"><div class="li"> リスト1-2</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> リスト2</div>
+</li>
+</ul>
+<pre class="code">  * リスト1
+  * リスト2
+最初のスペースの4個書くことで、リストの階層を表現できます。
+  * リスト1
+    * リスト1-1
+    * リスト1-2
+  * リスト2</pre>
+
+</div>
+<!-- EDIT11 SECTION "リストの作り方" [4305-4948] -->
+<h2 class="sectionedit12 seclink12" id="リンクを作る方法">リンクを作る方法</h2>
+<div class="level2">
+
+</div>
+<!-- EDIT12 SECTION "リンクを作る方法" [4949-4985] -->
+<h3 class="sectionedit13 seclink13" id="外部サイトへのリンク">外部サイトへのリンク</h3>
+<div class="level3">
+
+<p>
+<a href="http://www.google.com" class="urlextern" title="http://www.google.com" rel="nofollow">www.google.com</a>のようにURLを入力すると自動的にリンクが作成されます。<br/>
+
+または<a href="http://www.google.com" class="urlextern" title="http://www.google.com" rel="nofollow">Googleへのリンク</a> のようにテキストにリンクを設定することも可能です。
+</p>
+<pre class="code">または[[http://www.google.com|Googleへのリンク]] のようにテキストにリンクを設定することも可能です。</pre>
+
+</div>
+<!-- EDIT13 SECTION "外部サイトへのリンク" [4986-5403] -->
+<h3 class="sectionedit14 seclink14" id="内部文書へのリンク">内部文書へのリンク</h3>
+<div class="level3">
+
+<p>
+内部文書へのリンク方法は大きく三つの方法があります。
+</p>
+<ul>
+<li class="level1"><div class="li"><a href="/doku.php/%E3%81%A0%E3%82%8Cwiki" class="wikilink1" title="だれwiki">だれwiki</a>のようにページのタイトルをそのまま利用する方法</div>
+</li>
+<li class="level1"><div class="li"><a href="/doku.php/%E3%81%A0%E3%82%8Cwiki" class="wikilink1" title="だれwiki">だれwikiページへのリンクです</a> のようにページのタイトルでリンクを設定するが、リンクがかけられるテキストを設定する方法</div>
+</li>
+<li class="level1"><div class="li"><a href="/doku.php/%E3%81%A0%E3%82%8Cwiki#テスト用の見出し" class="wikilink1" title="だれwiki">見出しへ</a>のようにターゲットページの特定見出しまでのリンクを設定する方法</div>
+</li>
+</ul>
+<pre class="code">  *[[だれwiki]]のようにページのタイトルをそのまま利用する方法
+  *[[だれwiki|だれwikiページへのリンクです]] のようにページのタイトルでリンクを設定するが、リンクがかけられるテキストを設定する方法
+  *[[だれwiki#テスト用の見出し|見出しへ]]のようにターゲットページの特定見出しまでのリンクを設定する方法
+ </pre>
+
+</div>
+<!-- EDIT14 SECTION "内部文書へのリンク" [5404-6393] -->
+<h2 class="sectionedit15 seclink15" id="イメージを乗せる方法">イメージを乗せる方法　</h2>
+<div class="level2">
+
+</div>
+<!-- EDIT15 SECTION "イメージを乗せる方法　" [6394-6438] -->
+<h3 class="sectionedit16 seclink16" id="イメージをアップロードする">イメージをアップロードする　</h3>
+<div class="level3">
+
+<p>
+<img src="/lib/exe/fetch.php/wiki:logo.jpg?w=200&amp;tok=be1eff" class="media" alt="" width="200" /><br/>
+
+イメージはテキストエディターの<em class="u">がくぶち</em>をクリックしファイルをアップロードした後挿入することが可能です。<br/>
+
+</p>
+
+</div>
+<!-- EDIT16 SECTION "イメージをアップロードする　" [6439-6684] -->
+<h3 class="sectionedit17 seclink17" id="外部サイトのイメージを表示する">外部サイトのイメージを表示する　</h3>
+<div class="level3">
+
+<p>
+また、イメージにマウスを載せた際出力されるラベルは以下の方法で作成できます。
+<a href="/lib/exe/fetch.php?tok=1490eb&amp;media=https%3A%2F%2Fwww.google.co.jp%2Fimages%2Fbranding%2Fgooglelogo%2F2x%2Fgooglelogo_color_272x92dp.png" class="media" title="https://www.google.co.jp/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"><img src="/lib/exe/fetch.php?tok=1490eb&amp;media=https%3A%2F%2Fwww.google.co.jp%2Fimages%2Fbranding%2Fgooglelogo%2F2x%2Fgooglelogo_color_272x92dp.png" class="media" alt="" /></a>
+</p>
+<pre class="code">{{https://www.google.co.jp/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png}}</pre>
+
+</div>
+<!-- EDIT17 SECTION "外部サイトのイメージを表示する　" [6685-7050] -->
+<h3 class="sectionedit18 seclink18" id="イメージへのリンク方法">イメージへのリンク方法</h3>
+<div class="level3">
+
+<p>
+イメージへのリンクは以下の書き方で作成できます。
+</p>
+
+<p>
+<a href="/doku.php/%E3%81%A0%E3%82%8Cwiki" class="media" title="だれwiki"><img src="/lib/exe/fetch.php/wiki:logo.jpg?w=200&amp;tok=be1eff" class="media" alt="" width="200" /></a>
+</p>
+<pre class="code">[[だれwiki|{{:wiki:logo.jpg?nolink&amp;200|}}]]</pre>
+
+</div>
+<!-- EDIT18 SECTION "イメージへのリンク方法" [7051-7277] -->
+<h2 class="sectionedit19 seclink19" id="引用文を書くための方法">引用文を書くための方法</h2>
+<div class="level2">
+
+<p>
+引用は文書の前に&gt;を書くことで表現できます。だれwikiは扱うコンテンツが人であるため使用を推奨しております。どんどん使ってください。
+</p>
+<blockquote><div class="no">
+ 障害があったらのりこえればいい！<br/>
+ 道を選ぶということは、必ずしも歩きやすい安全な道を選ぶってことじゃないんだぞ<br/>
+ ‐ ドラえもん</div></blockquote>
+<blockquote><div class="no">
+ 君たちはいつもそうだね。<br/>
+ 事実をありのままに伝えると、決まって同じ反応をする。訳が分からないよ。<br/>
+ どうして人間はそんなに、魂の在処にこだわるんだい？<br/>
+ - キュゥべえ</div></blockquote>
+<pre class="code">&gt; 障害があったらのりこえればいい！
+&gt; 道を選ぶということは、必ずしも歩きやすい安全な道を選ぶってことじゃないんだぞ
+&gt; ‐ ドラえもん
+
+&gt; 君たちはいつもそうだね。
+&gt; 事実をありのままに伝えると、決まって同じ反応をする。訳が分からないよ。
+&gt; どうして人間はそんなに、魂の在処にこだわるんだい？
+&gt; - キュゥべえ</pre>
+
+<p>
+簡単な記法で表を作成できます。
+</p>
+
+</div>
+<!-- EDIT19 SECTION "引用文を書くための方法" [7278-8451] -->
+<h2 class="sectionedit20 seclink20" id="表を作る方法">表を作る方法</h2>
+<div class="level2">
+<div class="table sectionedit21 seclink21"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0 leftalign"> 見出し 1     </th><th class="col1 leftalign"> 見出し 2      </th><th class="col2 leftalign"> 見出し 3         </th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0 leftalign"> 行 1 列 1    </td><td class="col1 leftalign"> 行 1 列 2     </td><td class="col2 leftalign"> 行 1 列 3        </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> 行 2 列 1    </td><td class="col1" colspan="2"> 列の結合 (後の縦線が2つであることに注意) </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> 行 3 列 1    </td><td class="col1 leftalign"> 行 3 列 2     </td><td class="col2 leftalign"> 行 3 列 3        </td>
+	</tr>
+</table></div>
+<!-- EDIT21 TABLE [8484-8741] -->
+<p>
+表の各行は通常  <code>|</code> （縦線）ではじめます。見出し行については、 <code>^</code> （ハット記号）ではじめます。
+</p>
+<pre class="code">^ 見出し 1     ^ 見出し 2      ^ 見出し 3         ^
+| 行 1 列 1    | 行 1 列 2     | 行 1 列 3        |
+| 行 2 列 1    | 列の結合 (後の縦線が2つであることに注意) ||
+| 行 3 列 1    | 行 3 列 2     | 行 3 列 3        |</pre>
+
+<p>
+セルを水平に結合するには、上記のように、後のセルの中身を完全に無しにします。
+セルの区切りとなる縦線やハット記号は、どの行も同じ数だけ必要ですので注意してください。
+</p>
+
+<p>
+列見出しも可能です。
+</p>
+<div class="table sectionedit22 seclink22"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<td class="col0 leftalign">             </td><th class="col1 leftalign"> 見出し 1             </th><th class="col2 leftalign"> 見出し 2         </th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<th class="col0 leftalign"> 見出し 3    </th><td class="col1 leftalign"> 行 1 列 2            </td><td class="col2 leftalign"> 行 1 列 3        </td>
+	</tr>
+	<tr class="row2">
+		<th class="col0 leftalign"> 見出し 4    </th><td class="col1"> 列の結合は今回は無し </td><td class="col2 leftalign">                  </td>
+	</tr>
+	<tr class="row3">
+		<th class="col0 leftalign"> 見出し 5    </th><td class="col1 leftalign"> 行 2 列 2            </td><td class="col2 leftalign"> 行 2 列 3        </td>
+	</tr>
+</table></div>
+<!-- EDIT22 TABLE [9431-9695] -->
+<p>
+つまり、セルの前にある区切りの記号によって、様式が変化します。
+</p>
+<pre class="code">|             ^ 見出し 1             ^ 見出し 2         ^
+^ 見出し 3    | 行 1 列 2            | 行 1 列 3        |
+^ 見出し 4    | 列の結合は今回は無し |                  |
+^ 見出し 5    | 行 2 列 2            | 行 2 列 3        |</pre>
+
+<p>
+行を結合することもできます。行の結合をする場合は、結合対象セルの下のセルの中に <code>:::</code> という文字列を入力します。
+</p>
+<div class="table sectionedit23 seclink23"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0 leftalign"> 見出し 1     </th><th class="col1 leftalign"> 見出し 2     </th><th class="col2 leftalign"> 見出し 3     </th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0 leftalign"> 行 1 列 1    </td><td class="col1 leftalign" rowspan="3"> 行の結合     </td><td class="col2 leftalign"> 行 1 列 3    </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> 行 2 列 1    </td><td class="col1 leftalign"> 行 2 列 3    </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> 行 3 列 1    </td><td class="col1 leftalign"> 行 2 列 3    </td>
+	</tr>
+</table></div>
+<!-- EDIT23 TABLE [10233-10445] -->
+<p>
+これらのセルに <code>:::</code> 以外の文字列を入力することはできません。
+</p>
+<pre class="code">^ 見出し 1     ^ 見出し 2     ^ 見出し 3     ^
+| 行 1 列 1    | 行の結合     | 行 1 列 3    |
+| 行 2 列 1    | :::          | 行 2 列 3    |
+| 行 3 列 1    | :::          | 行 2 列 3    |</pre>
+
+<p>
+表の内容の配置を指定できます。2個以上のスペースをテキストの反対側に置きます。
+つまり、右揃えにするには左側に2個のスペースを、左揃えにするには右側に2個のスペースを置きます。
+中央揃えにするにはテキストの両側に2個以上のスペースを置きます。
+</p>
+<div class="table sectionedit24 seclink24"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0 centeralign" colspan="3">              配置を指定した表            </th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0 rightalign">            右</td><td class="col1 centeralign">    中央      </td><td class="col2 leftalign">左            </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign">左            </td><td class="col1 rightalign">            右</td><td class="col2 centeralign">    中央      </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> xxxxxxxxxxxx </td><td class="col1"> xxxxxxxxxxxx </td><td class="col2"> xxxxxxxxxxxx </td>
+	</tr>
+</table></div>
+<!-- EDIT24 TABLE [11114-11317] -->
+<p>
+上記のソースは次のようになります。
+</p>
+<pre class="code">^              配置を指定した表            ^^^
+|            右|    中央      |左            |
+|左            |            右|    中央      |
+| xxxxxxxxxxxx | xxxxxxxxxxxx | xxxxxxxxxxxx |</pre>
+
+</div>
+<!-- EDIT20 SECTION "表を作る方法" [8452-] --><div class="footnotes">
+<div class="fn"><sup><a href="#fnt__1" id="fn__1" class="fn_bot">1)</a></sup> 
+<div class="content">本来は出典もしくは付加的な説明を書く部分ですが、該当内容に関する個人的な意見や見解の書いても問題ございません。</div></div>
+</div>

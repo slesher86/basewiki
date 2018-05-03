@@ -1,0 +1,30 @@
+====== だれwiki：表紙 ======
+<WRAP group>
+<WRAP half column>
+===== ロゴデザイン =====
+{{:wiki:logo_backwhite.png|}}
+>あの人<wrap em>だれ？</wrap>
+===== だれwikiとは =====
+{{:wiki:004-user.png |}}
+だれwikiは、芸能人や業界人など人にかかわる情報を扱うwikiサイトです。テレビや知人との会話で「あの人だれだろ？」と思った瞬間に情報を探せるサイトとして、友達に教えたり芸能がいる際に「これ読んで！」と紹介できるサイトを目指します。
+===== 運営方針に関して =====
+{{:wiki:003-idea.png |}}だれwikiは「正しい」「客観的」な情報よりも「驚く」「共感できる」情報を重視します。そのため本サイト上で掲載される情報は読み手の方は検証されていない、傾いた内容であることをご了承ください。
+
+</WRAP>
+
+<WRAP half column>
+===== お知らせ =====
+<html>
+<a class="twitter-timeline" data-chrome="noheader,nofooter,noborders" data-tweet-limit="1" data-link-color="#f0c"
+data-border-color="#f0c" href="https://twitter.com/darewiki?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</html>
+===== 話題の文書 =====
+~~NOCACHE~~
+~~QUICKSTATS:pages;;10~~
+
+
+===== 最近更新されたページ =====
+{{changes>15&type=edit&render=pagelist(header,nouser,nocomments,nosummary,nosignature)}}
+
+</WRAP>
+</WRAP>
