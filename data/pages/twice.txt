@@ -3,9 +3,6 @@
 
 {{gallery>wiki:?lightbox&1&=10&~1&500x500 }}
 
-|{{ :twice:nayon.jpg?100 |}}|{{ :twice:jungyon.jpg?100 |}}|{{ :twice:momo.jpg?100 |}}|{{ :twice:sana.jpg?100 |}}|{{ :twice:jihyo.jpg?100 |}}|{{ :twice:mina.jpg?100 |}}|{{ :twice:dahyon.jpg?100 |}}|{{ :twice:cheyon.jpg?100 |}}|{{ :twice:tsuwi.jpg?100 |}}|
-|  ナヨン  |  ジョンヨン  |  モモ  |  サナ  |  ジヒョ  |  ミナ  |  ダヒョン  |  チェヨン  |  ツウィ  |
-
 
 {{Infobox
 | Title = Example Title
